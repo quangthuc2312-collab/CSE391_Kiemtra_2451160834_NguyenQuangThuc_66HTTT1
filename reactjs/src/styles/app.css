@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  background: #f0f2f5;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header-box {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  border-radius: 8px 8px 0 0;
+}
+
+.header-box h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-box p {
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+
+.content-box {
+  background: #e9ecef;
+  border-radius: 0 0 8px 8px;
+}
+
+.form-card {
+  border: none;
+  border-top: 4px solid #0d6efd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.top-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 10px;
+}
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tab-btn {
+  border: 1px solid #dee2e6;
+  background: white;
+  border-radius: 20px;
+  padding: 7px 18px;
+  font-size: 14px;
+}
+
+.tab-btn.active {
+  background: #0d6efd;
+  color: white;
+}
+
+.total-badge {
+  background: #0d6efd;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.record-card {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 18px;
+  border-top: 5px solid #6c757d;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
+
+.record-card.success {
+  border-top-color: #198754;
+}
+
+.record-card.warning {
+  border-top-color: #fd7e14;
+}
+
+.record-card.secondary {
+  border-top-color: #6c757d;
+}
+
+.record-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: start;
+}
+
+.record-head h5 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.status-badge {
+  color: white;
+  border-radius: 18px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-badge.success {
+  background: #198754;
+}
+
+.status-badge.warning {
+  background: #fd7e14;
+}
+
+.status-badge.secondary {
+  background: #6c757d;
+}
+
+.department {
+  margin: 14px 0 8px;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 0;
+}
+
+.empty-box {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .top-area,
+  .record-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .total-badge {
+    width: fit-content;
+  }
+}
